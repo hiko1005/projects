@@ -1,0 +1,156 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.flex {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+/* header */
+
+header {
+    width: 100%;
+    height: 80px;
+}
+
+header a {
+    color: rgb(141, 43, 43);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+header nav div a:nth-child(-n + 2) {
+    margin-right: 20px;
+}
+
+header a:hover {
+    color: rgb(255, 94, 0);
+}
+
+/* header */
+
+/* main */
+
+/* hero */
+
+.hero {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./images/experts.png');
+    background-size: cover;
+    font-size: 5.5rem;
+    transition: all 200ms;
+    color: rgb(189, 46, 255);
+    border-top: 5px solid rgb(68, 68, 68);
+    border-bottom: 5px solid rgb(68, 68, 68);
+    text-shadow: 2px 2px red;
+}
+
+.hero:hover {
+    color: rgb(132, 0, 255);
+    text-shadow: -2px 2px red;
+}
+
+/* hero */
+
+/* want */
+
+.want {
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    background: linear-gradient(45deg, red, pink);
+    border-bottom: 5px solid rgb(68, 68, 68);
+}
+
+.want div {
+    text-align: center;
+}
+
+.want img {
+    margin-top: 50px;
+    transition: all 200ms;
+}
+
+/* .want img:hover {
+    transform: translateY(20px);
+} */
+
+/* want */
+
+/* ul */
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 600px;
+    list-style-type: none;
+    border-bottom: 2px solid rgb(68, 68, 68);
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+}
+
+ul li a {
+    color: black;
+    font-size: 3rem;
+    font-weight: 700;
+    transition: all 200ms;
+    cursor: pointer;
+}
+
+ul li a:hover {
+    color:rgb(255, 0, 0);
+}
+
+/* ul */
+
+/* text */
+
+.end-text {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: all 200ms;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.end-text:hover {
+    background-color: rgb(255, 188, 62);
+}
+
+/* text */
+
+/* main */
